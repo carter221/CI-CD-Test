@@ -4,11 +4,11 @@ def bixtil_year(year):
     if year % 4 == 0:
         if year % 100 == 0:
             if year % 400 == 0:
-                return print('C\'est une année bissextiles')
+                return print('C\'est une année bissextilese')
             else:
                 return print('Revenez dans 4 ans')
         else:
-            return print('C\'est une année bissextiles')
+            return print('C\'est une année bissextilese')
     else:
         return print('Revenez dans 4 ans')
 
