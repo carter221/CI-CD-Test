@@ -1,4 +1,4 @@
-names: python-ci
+name: python-ci
 on:
   push:
     branches: [ main ]
@@ -9,7 +9,6 @@ jobs:
     build:
 
         runs-on: ubuntu-latest
-
         steps:
             - uses: actions/checkout@v4
             - name: Set up python 3.x
@@ -21,6 +20,6 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -r requirements.txt
             - name: Test my code
-            run: |
+              run: |
                 pytest main.py --maxfail=1 --disable-warnings -q
             
